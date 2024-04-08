@@ -8,7 +8,12 @@ import userRoutes from './routes/users.js'
 
 const app = express()
 dotenv.config()
-
+app.use(cors(
+  {
+    origin: ["https://otaku-feed.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
 app.use(bodyParser.json({limit: "32mb", extended:true}))
 app.use(bodyParser.urlencoded({limit: "32mb", extended:true}))
 app.use(cors())
