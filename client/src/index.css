@@ -1,0 +1,11 @@
+
+body {
+    background-image: url('../src/images/background.jpg'); /* Adjust the path accordingly */
+    background-size: cover; /* Optional: Cover the entire background */
+    /* Additional background properties if needed */
+    overflow-x: hidden;
+ 
+    background-attachment: fixed;
+
+  }
+  

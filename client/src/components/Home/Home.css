@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+}
+.not-main {
+  width: 30%;
+  float: left;
+}
+.main {
+  width: 70%;
+  float: left;
+}
+@media (max-width: 900px) {
+  *{
+    box-sizing: border-box;
+  }
+  .not-main {
+    width: 50%;
+    float: left;
+  }
+  .main {
+    width: 50%;
+    float: left;
+  }}
+@media (max-width: 600px) {
+  *{
+    box-sizing: border-box;
+  }
+  .form-container{
+    margin-right: 15px;
+  }
+  .not-main {
+    width: 100%;
+    float: inline-start;
+
+  
+  }
+  .main {
+    width: 100%;
+
+float: inline-end;
+
+  }}
+  @media (min-width: 600px) {
+    .form-container{
+      position: fixed;
+      float: right;
+      margin: 10px 6% 10px 10px !important;
+    
+    }
+
+  }
+  

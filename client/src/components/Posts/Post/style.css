@@ -1,0 +1,85 @@
+.card {
+   width: 230px;
+   height: 100%;
+   overflow: hidden; /* or overflow: scroll; */
+   background-color: rgba(256, 256, 256, 0.5) !important;
+   padding: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+ }
+ 
+
+ 
+ .card-media {
+  width: 80%;
+  height: 160px;
+  position: relative;
+ }
+ 
+ .card-top {
+  font-size:x-small;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ 
+ .card-tags {
+  padding: 10px;
+ }
+ 
+ .card-bottom {
+  flex: 1;
+  padding: 10px;
+  padding: 4%;
+ }
+
+ .card-action {
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+
+
+ }
+
+ Button.card-button{
+    width:10%;
+ }
+ .image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+ }
+ 
+ .image-container img {
+  width: 100%;
+  height: auto;
+ }
+ 
+ .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+ }
+ 
+ .image-container:hover .image-overlay {
+  opacity: 1;
+ }
+ @media (max-width: 600px) {
+   
+ .card {
+   width:250px;
+   height:100% !important;
+   background-color: rgba(256, 256, 256, 0.5) !important;
+   padding: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   
+  }
+ }

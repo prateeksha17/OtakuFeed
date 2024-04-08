@@ -1,0 +1,5 @@
+.edit-container{
+    background-color: aliceblue;
+    z-index: 10;
+    float:inline-start;
+}
