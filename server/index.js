@@ -22,6 +22,9 @@ app.use(bodyParser.urlencoded({ limit: "32mb", extended: true }));
 app.use('/posts', postRoutes);
 app.use('/user', userRoutes);
 
+// Handling preflight requests
+app.options('*', cors());
+
 const CONNECTION_URL = 'mongodb+srv://prateekshapandey8177:everything_sucks@cluster0.oj4pf3v.mongodb.net/?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
 
