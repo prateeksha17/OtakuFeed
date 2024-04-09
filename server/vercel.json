@@ -11,7 +11,7 @@
       "headers": {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, X-Auth-Token, Origin, Authorization"
+        "Access-Control-Allow-Headers": "Content-Type, X-Auth-Token, Origin, Authorization, X-Requested-With, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
       }
     }
   ]
