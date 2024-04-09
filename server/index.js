@@ -24,7 +24,10 @@ app.use('/posts', postRoutes);
 app.use('/user', userRoutes);
 
 // Handling preflight requests
-app.options('*', cors());
+
+app.options('/*', (_, res) => {
+    res.sendStatus(200);
+});
 
 const CONNECTION_URL = 'mongodb+srv://prateekshapandey8177:everything_sucks@cluster0.oj4pf3v.mongodb.net/?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
