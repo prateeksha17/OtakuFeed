@@ -10,7 +10,7 @@ const app = express()
 dotenv.config()
 app.use(cors(
   {
-    origin: ["https://otaku-feed-front.vercel.app/"],
+    origin: ["https://otaku-feed-front.vercel.app"],
              
     methods: ["POST", "GET"],
     credentials: true
