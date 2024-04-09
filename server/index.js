@@ -11,6 +11,7 @@ dotenv.config()
 app.use(cors(
   {
     origin: ["https://otaku-feed.vercel.app/"],
+             
     methods: ["POST", "GET"],
     credentials: true
   }
