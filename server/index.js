@@ -13,7 +13,7 @@ dotenv.config();
 // Configuring CORS middleware
 app.use(cors({
   origin: ["https://otaku-feed-front.vercel.app"],
-  methods: ["POST", "GET"],
+  methods: ["POST", "GET", "PATCH", "DELETE"],
   credentials: true
 }));
 
